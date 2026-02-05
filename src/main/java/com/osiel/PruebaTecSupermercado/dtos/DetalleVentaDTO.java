@@ -1,21 +1,21 @@
 package com.osiel.PruebaTecSupermercado.dtos;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class DetalleVentaDTO {
     private Long id;
 
-    private String nombreProd;
+    private Long idProducto;
 
-    private Integer cantProd;
+    private String nombreProducto;
 
-    private Double precio;
+    private Integer cantidad;
+
+    private Double precioUnitario;
 
     private Double subtotal;
 }

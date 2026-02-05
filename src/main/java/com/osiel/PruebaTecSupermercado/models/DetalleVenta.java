@@ -23,7 +23,7 @@ public class DetalleVenta {
     @ManyToOne
     private Producto producto;
 
-    private Integer cantProd;
+    private Integer cantidad;
 
     private Double precio;
 }
